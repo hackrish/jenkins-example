@@ -56,11 +56,19 @@
     </dependencies>
 
     <repositories>
-       
+       <repository>
+      <id>example-repo</id>
+      <name>Example Repository</name>
+      <url>file://C:\Jenkin\mavenrepo</url>
+    </repository>
     </repositories>
 
     <distributionManagement>
-        
+        <repository>
+      <id>example-repo</id>
+      <name>Example Repository</name>
+      <url>file://C:\Jenkin\mavenrepo</url>
+    </repository>
     </distributionManagement>
 
 </project>
