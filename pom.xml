@@ -56,21 +56,11 @@
     </dependencies>
 
     <repositories>
-        <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/BCNeY5gEQSTrjtZZWanT/</url>
-        </repository>
-              <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/26gYLd0KNQiai8xQThvb/</url>
-        </repository>
+       
     </repositories>
 
     <distributionManagement>
-        <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/26gYLd0KNQiai8xQThvb/</url>
-        </repository>
+        
     </distributionManagement>
 
 </project>
