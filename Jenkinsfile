@@ -28,10 +28,10 @@ pipeline {
                 }
             }
         }
-        stage('Setup') {
+        stage('ZAPSetup') {
             steps {
                 script {
-                    startZap(host: "127.0.0.1", port: 9091, timeout:500, zapHome: "C:/Krishna/OWASP/ZedAttackProxy", sessionPath:"file:///C:/Program%20Files/OWASP/session.session", allowedHosts:['https://appsec-targ11.pd.local:8443']) // Start ZAP at /opt/zaproxy/zap.sh, allowing scans on github.com (if allowedHosts is not provided, any local addresses will be used
+                    startZap(host: "127.0.0.1", port: 9091, timeout:500, zapHome: "C:/Krishna/ZedAttackProxy", sessionPath:"file:///C:/Program%20Files/OWASP/session.session", allowedHosts:['https://appsec-targ11.pd.local:8443']) // Start ZAP at /opt/zaproxy/zap.sh, allowing scans on github.com (if allowedHosts is not provided, any local addresses will be used
                 }
             }
         }
